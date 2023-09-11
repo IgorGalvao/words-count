@@ -4,12 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Insert text</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}" />
 </head>
 <body>
-  <form action="/" method="post">
-    <p>Text:</p>
-    <textarea name="text_data"></textarea>
-    <input type="submit" value="Count" />
-  </form>
+  <div class="flex max-w-2xl">
+    <form
+        action="/"
+        method="post"
+        class="w-screen">
+      <p>Text:</p>
+      <textarea class="w-full" name="text_data"></textarea>
+      <input
+        type="submit"
+        value="Count"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"/>
+    </form>
+  </div>
 </body>
 </html>
